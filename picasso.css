@@ -1,0 +1,207 @@
+/*1. Use grid or flex.
+  2. Use three various types of CSS units.
+  3. Make sure it works on all screen sizes. Some people will not be able to attend the gallery but they have a virtual gallery room.
+      Desktop: 1680 x 1050
+      iPad: 1024 x 768
+      Mobile: 480 x 320
+  4. You must use z-index and hierarchical selectors in the code.
+  5. Use common shorthand where applicable.
+  6. Add an HTML form to collect the names and emails of interested visitors. 
+  7. It should have a submit button and the form's action will take the user to another HTML page.
+      Note: the form does not actually need to collect information! You can direct the user to another HTML page by assigning a value to the <form>'s action attribute.
+  8. Please upload your files (Picasso.html, external.css, formsubmitted.html) to Canvas or a GitHub link (make sure it is set to public).
+*/
+
+.container {
+  display: grid;
+  grid-template-rows: 60px;
+  width: 12.6in;
+  border: 2px solid black;
+}
+
+#header{
+  border: 1px solid back;
+  background-color: rgb(194, 189, 189);
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  margin: 2.65mm;
+  font-size: 30pt;
+  text-align: center;
+  color: #03045e;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.flexContainer {
+  position:absolute;
+  display: flex;
+  background-color: rgb(194, 189, 189);
+  margin: 2.65mm;
+  flex-direction: row;
+  align-items: center;
+  border: 2px solid black;
+}
+
+#head{
+  border: 1px solid back;
+  background-color: #03045e;
+  margin: 2.65mm;
+  width: 4.25in;
+  height: 250px;
+  flex-direction: row;
+  margin: 200px 400px 300px 400px;
+  z-index: 2;
+}
+
+#eye1{
+  width: 30px;
+  height: 45px;
+  top: 256px;
+  left: 465px;
+  background-color: #82ddf0;
+  margin: 2.65mm;
+  flex-direction: row;
+  position: absolute;
+  z-index: 5;
+}
+
+#eye2{
+  width: 30px;
+  height: 30px;
+  top: 256px;
+  left: 665px;
+  background-color: #90e0ef;
+  margin: 2.65mm;
+  flex-direction: row;
+  position: absolute;
+  z-index: 5;
+}
+
+#leftEar{
+  width: 75px;
+  height: 180px;
+  top: 90px;
+  left: 380px;
+  background-color: #03045e;
+  margin: 2.65mm;
+  flex-direction: row;
+  position: absolute;
+  z-index: 5;
+}
+
+#leftEar2{
+  width: 100px;
+  height: 110px;
+  top: 95px;
+  left: 315px;
+  background-color: #186e9c;
+  margin: 2.65mm;
+  flex-direction: row;
+  position: absolute;
+  z-index: 5;
+}
+
+#rightEar{
+  width: 75px;
+  height: 180px;
+  top: 80px;
+  left: 700px;
+  background-color: #186e9c;
+  margin: 2.65mm;
+  flex-direction: row;
+  position: absolute;
+  z-index: 5;
+}
+
+#rightEar2{
+  width: 120px;
+  height: 145px;
+  top: 100px;
+  left: 725px;
+  background-color: #03045e;
+  margin: 2.65mm;
+  flex-direction: row;
+  position: absolute;
+  z-index: 5;
+}
+
+#nose{
+  width: 200px;
+  height: 300px;
+  top: 340px;
+  left: 500px;
+  background-color: #00b4d8;
+  margin: 2.65mm;
+  flex-direction: row;
+  position: absolute;
+  z-index: 5;
+}
+
+#tongue{
+  width: 50px;
+  height: 100px;
+  top: 615px;
+  left: 580px;
+  background-color: rgb(241, 147, 199);
+  margin: 2.65mm;
+  flex-direction: row;
+  position: absolute;
+  z-index: 2;
+}
+
+#jaw{
+  width: 150px;
+  height: 100px;
+  top: 590px;
+  left: 525px;
+  background-color: #3cc3db;
+  margin: 2.65mm;
+  flex-direction: row;
+  position: absolute;
+  z-index: 2;
+}
+
+.container2 {
+  display: grid;
+  grid-template-rows: 340px;
+  margin-top: 770px;
+  border: 2px solid black;
+  width: 1210px;
+}
+
+#footer{
+  border: 1px solid back;
+  background-color: rgb(194, 189, 189);
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  margin: 2.65mm;
+  width: 1190px;
+  font-size: 18.75pt;
+  text-align: center;
+  color: #03045e;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.display{
+  display: inline;
+}
+
+@media (max-width: 1600px){
+  .container{
+    margin:auto;
+    padding: 0;
+  }
+}
+
+@media (max-width: 1024px){
+  .container{
+    margin:auto;
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px){
+  .container{
+    margin:auto;
+    padding: 0;
+  }
+}
